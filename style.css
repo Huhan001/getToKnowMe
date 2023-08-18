@@ -1,0 +1,274 @@
+html {
+    box-sizing: border-box;
+}
+
+/*lets start with the body*/
+body {
+    display: flex;
+    margin: 0;
+    min-width: 99vh;
+    background-color:#F0B27A;
+    background-image: linear-gradient(ghostwhite,whitesmoke, black);
+}
+
+.main-body {
+    background-image: linear-gradient( ghostwhite, whitesmoke, black);
+    min-width: 100ch;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    margin: 5px;
+/*    border-radius: 20px;*/
+}
+
+.content-body {
+    margin: 10px;
+    border: none;
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+    box-shadow: inset 5px 5px 7px 7px #dddce0;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+
+    animation: bounceInLeft;
+    animation-duration: 1s;
+
+    flex-wrap: wrap;
+}
+
+.header {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    margin: auto;
+
+/*    google font*/
+   font-family: 'Cairo', sans-serif;
+}
+.header .resume {
+    grid-column: 9/span 2;
+    box-shadow: 5px 5px 2px lightgray;
+    height: 55px;
+    border: none;
+    margin-right: 20px;
+    border-radius: 10px;
+    justify-self: stretch;
+    font-size: 20px;
+
+    background: #808B96;
+    color: white;
+    font-weight: 800;
+    padding-right: 5px;
+}
+
+.header .info{
+    grid-column: 11/span 2;
+    box-shadow: 5px 5px 2px lightgray;
+    height: 55px;
+    border: none;
+    margin-right: 20px;
+    border-radius: 10px;
+    justify-self: stretch;
+    font-size: 20px;
+
+    background-image: url("https://thumbs.gfycat.com/EntireEminentHornedtoad-size_restricted.gif");
+    background-size: cover;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.header .name {
+    margin-left: 10px;
+    grid-column: 1;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-size: 33px;
+    padding-left: 20px;
+}
+
+.header .secondname {
+    padding-left: 10px;
+    font-size: 33px;
+}
+
+.header .info:active:hover {
+    transform: translateY(5px);
+}
+.header .resume:active:hover {
+    transform: translateY(5px);
+}
+
+/*footer*/
+.remarks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.remarks img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 9px;
+    height: 9px;
+    padding-bottom: 1px;
+    animation: heartBeat;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+.remarks p {
+    padding-top: 10px;
+    font-family: Menlo;
+    color: white;
+}
+
+/*middle part*/
+
+.middle-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    flex-direction: row;
+}
+
+.middle-part .information-basis {
+    font-size: 90px;
+    padding-left: 20px;
+    box-shadow: 0 4px 2px -2px #dddce0;
+/*    font-family: Menlo;*/
+}
+
+/*techstack*/
+
+.techstact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 90%;
+    font-size: 20px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    list-style-type: none;
+    box-shadow: inset 5px 5px 7px 7px #dddce0;
+
+    justify-content: center;
+    gap: 20px;
+    border-radius: 2px;
+    border: none;
+
+
+}
+
+.secondname {
+    color: #808B96;
+}
+
+
+.techstact li {
+/*    color: #808B96;*/
+    color: white;
+    font-family: Menlo;
+}
+
+/*particular tech division*/
+.softwaredevelipment,.blockchain, .dataAnalysis {
+    border-radius: 5px;
+    background-image: linear-gradient(#808B96,#EB984E);
+    padding: 25px;
+    box-shadow: 4px 4px 4px 5px #dddce0;
+/*    font-family: Menlo;*/
+}
+
+.dataAnalysis {
+    padding-right: 35px;
+}
+
+@media screen and (max-width: 708px) {
+    .main-body {
+        width: 95%;
+    }
+
+    .header .resume,
+    .header .info {
+        grid-column: span 6;
+        font-size: 16px;
+    }
+
+   .information-basis {
+        font-size: 60px;
+        padding-left: 10px;
+    }
+
+
+    .techstact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .remarks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .remarks img {
+        width: 15px;
+        height: 15px;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+.header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+.name, .secondname {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+.resume, .info {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.information-basis {
+        font-size: 24px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+.information-basis p:last-child {
+        padding-bottom: 5px;
+    }
+}
+
+
+/*.toast {*/
+/*    position: fixed;*/
+/*    top: 20px;*/
+/*    right: 20px;*/
+/*    z-index: 1050;*/
+/*    background-color: #ffffff;*/
+/*    border: 1px solid #dadada;*/
+/*    border-radius: 5px;*/
+/*    padding: 10px;*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.2s ease-in-out;*/
+/*}*/
+
+/*.toast.show {*/
+/*    opacity: 1;*/
+/*}*/
