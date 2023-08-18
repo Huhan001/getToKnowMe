@@ -6,20 +6,19 @@ html {
 body {
     display: flex;
     margin: 0;
-    min-width: 99vh;
+    min-width: 100vh;
     background-color:#F0B27A;
-    background-image: linear-gradient(ghostwhite,whitesmoke, black);
+    background-image: linear-gradient(ghostwhite,whitesmoke, ghostwhite);
 }
 
 .main-body {
-    background-image: linear-gradient( ghostwhite, whitesmoke, black);
+    background-image: linear-gradient( whitesmoke, whitesmoke, ghostwhite);
     min-width: 100ch;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    padding: 5px;
+/*    padding: 5px;*/
     margin: 5px;
-/*    border-radius: 20px;*/
 }
 
 .content-body {
@@ -82,24 +81,24 @@ body {
     padding-right: 5px;
 }
 
-.header .name {
+.name {
     margin-left: 10px;
     grid-column: 1;
-    font-size: 30px;
-    padding-bottom: 10px;
     font-size: 33px;
+    padding-bottom: 10px;
+/*    font-size: 33px;*/
     padding-left: 20px;
 }
 
-.header .secondname {
+.secondname {
     padding-left: 10px;
     font-size: 33px;
 }
 
-.header .info:active:hover {
+.info:active:hover {
     transform: translateY(5px);
 }
-.header .resume:active:hover {
+.resume:active:hover {
     transform: translateY(5px);
 }
 
@@ -123,7 +122,7 @@ body {
 .remarks p {
     padding-top: 10px;
     font-family: Menlo;
-    color: white;
+    color: darkblue;
 }
 
 /*middle part*/
@@ -131,13 +130,13 @@ body {
 .middle-part {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    flex-direction: row;
+    min-width: 110vh;
+    flex-direction: column;
 }
 
 .middle-part .information-basis {
-    font-size: 90px;
-    padding-left: 20px;
+    font-size: 89px;
+    padding-left: 25px;
     box-shadow: 0 4px 2px -2px #dddce0;
 /*    font-family: Menlo;*/
 }
@@ -150,8 +149,8 @@ body {
     flex-wrap: wrap;
     height: 90%;
     font-size: 20px;
-    padding-top: 36px;
-    padding-bottom: 30px;
+    padding-top: 46px;
+    padding-bottom: 55px;
     list-style-type: none;
     box-shadow: inset 5px 5px 7px 7px #dddce0;
 
@@ -159,7 +158,6 @@ body {
     gap: 20px;
     border-radius: 2px;
     border: none;
-
 
 }
 
@@ -170,14 +168,14 @@ body {
 
 .techstact li {
 /*    color: #808B96;*/
-    color: white;
+    color: darkblue;
     font-family: Menlo;
 }
 
 /*particular tech division*/
 .softwaredevelipment,.blockchain, .dataAnalysis {
     border-radius: 5px;
-    background-image: linear-gradient(#808B96,#EB984E);
+    background-image: linear-gradient(orange,lightgray, lightgray, #808B96);
     padding: 25px;
     box-shadow: 4px 4px 4px 5px #dddce0;
 /*    font-family: Menlo;*/
